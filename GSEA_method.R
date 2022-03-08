@@ -1,4 +1,4 @@
-suppressMessages(library(GSEA))
+suppressMessages(library(fgsea))
 suppressMessages(library(Seurat))
 suppressMessages(library(ggplot2))
 
