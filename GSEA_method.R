@@ -1,6 +1,7 @@
 suppressMessages(library(fgsea))
 suppressMessages(library(Seurat))
 suppressMessages(library(ggplot2))
+suppressMessages(library(rlist))
 
 args <- commandArgs(trailingOnly = TRUE)
 len<-length(args)
@@ -37,7 +38,7 @@ for(i in as.character(unique(deg.all$cluster))){
   
   S4table<-deg.all1
   
-  gene_list = S4table$avg_logFC
+  gene_list = S4table$avg_log2FC
   names(gene_list) = S4table$gene
   gene_list = sort(gene_list, decreasing = TRUE)
   gene_list = gene_list[!duplicated(names(gene_list))]
