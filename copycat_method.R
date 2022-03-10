@@ -23,12 +23,10 @@ dir.create(outdir,recursive=T)
 SC.sub<-readRDS(Seurat_Rdsfile)
 
 exp.rawdata<-as.matrix(SC.sub[['RNA']]@counts)
-
 pheno.sc<-SC.sub@meta.data
-
 rawcout<-exp.rawdata
 barcode.select<-colnames(rawcout)
-copykat.test <- copykat(rawmat=exp.rawdata, 
+copykat.test <- copykat(rawmat=rawcout, 
                         id.type="S",
                         ngene.chr=5, 
                         win.size=25,
