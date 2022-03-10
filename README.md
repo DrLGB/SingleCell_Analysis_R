@@ -38,7 +38,7 @@ Usage:
 ```
       Rscripts CytoTRACE_method.R 10x.seurat.rds outdir prefix
       Rscripts slingshot_method.R 10x.seurat.rds outdir prefix
-      Rscripts SCNICIC_method.R 10x.seurat.rds hg38_cistarget_db outdir prefix
+      Rscripts SCENIC_method.R 10x.seurat.rds hg38_cistarget_db outdir prefix
       Rscripts copycat_method.R 10x.seurat.rds outdir prefix
       Rscripts inferCNV_method.R 10x.seurat.rds grch38.bed outdir prefix
       Rscripts GSVA_method.R 10x.seurat.rds pathway.db outdir prefix
