@@ -2,6 +2,7 @@ suppressMessages(library(SCENIC))
 suppressMessages(library(SCopeLoomR))
 suppressMessages(library(Seurat))
 suppressMessages(library(SCENIC))
+suppressMessages(library(pheatmap))
 suppressMessages(library(ggplot2))
 
 args <- commandArgs(trailingOnly = TRUE)
